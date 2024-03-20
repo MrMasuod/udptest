@@ -1,0 +1,55 @@
+[
+    {
+        "id": "d34103f79f2d959e",
+        "type": "subflow",
+        "name": "PORT",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "1b04d1c854012d2a"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "PORT",
+                "type": "str",
+                "value": "80"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1b04d1c854012d2a",
+        "type": "udp out",
+        "z": "d34103f79f2d959e",
+        "name": "",
+        "addr": "localhost",
+        "iface": "",
+        "port": "${PORT}",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 340,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a25ca5c5b5cc9c04",
+        "type": "subflow:d34103f79f2d959e",
+        "z": "a348b9abdf646824",
+        "name": "",
+        "x": 490,
+        "y": 160,
+        "wires": []
+    }
+]
